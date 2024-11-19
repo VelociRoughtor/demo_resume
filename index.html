@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        .card-container {
+            height: 70vh;
+            width: 70vh;
+            border-radius: 50px;
+            margin: auto;
+            background-color: lightgreen;
+            padding: 20px;
+        }
+
+        .card-info-container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 20px; 
+        }
+
+        .card-upper {
+            background-color: rgb(9, 92, 9);
+            height: 30vh;
+            width: 30vh;
+            border-radius: 50%;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .card-upper > img {
+            width: 95%;
+            height: 95%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .card-info {
+            background-color: rgb(9, 92, 9);
+            border-radius: 20px;
+            padding: 20px;
+            max-width: 45%;
+            margin-top: -15px;
+            font-weight: 500;
+        }
+
+        .card-info > ul {
+            list-style: none;
+            padding: 0; 
+            margin: 0; 
+            color: whitesmoke;
+        }
+
+        .card-info > ul > li {
+            margin-bottom: 5px; 
+        }
+        .card-info a{
+            text-decoration: none;
+            color: white;
+        }
+        .card-contents {
+            margin-top: 10px;
+            text-align: center;
+            background-color: rgb(9, 92, 9);
+            height: 30vh;
+            border-radius: 40px;
+            padding: 20px;
+            color: whitesmoke;
+        }
+
+        .card-contents > hr {
+            height: 2px;
+            background: green;
+            border: none; 
+            margin: 10px 0; 
+        }
+
+        .card-contents h1 {
+            margin-bottom: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card-info-container">
+            <div class="card-upper">
+                <img src="images/profile.jpeg" alt="Profile Picture of Md. Mehedi Hasan Rafy">
+            </div>
+            <div class="card-info">
+                <ul>
+                    <li>Education: University of Rajshahi</li>
+                    <li>Skills: Nai</li>
+                    <li>Experience: Nai</li>
+                    <li>Projects: <a href="https://github.com" target="_blank">Find Here</a></li>
+                    <li>Contact: +8801302732393</li>
+                    <li>Hobbies: CP</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card-contents">
+            <h1>Md. Mehedi Hasan Rafy</h1>
+            <p>Junior Web Developer</p>
+            <hr>
+            <p>Crafting sleek, responsive websites with creativity and code—your vision, my mission!</p>
+        </div>
+    </div>
+</body>
+</html>
